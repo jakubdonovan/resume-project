@@ -12,6 +12,46 @@ html
 .inline-block
     display: inline-block
 
+.row-table
+    display: table
+
+.section-column
+    display: table-cell
+    padding: 0 3rem 3rem
+    float: none
+
+.history-heading,
+.section-heading
+    font-size: 2rem
+    font-family: "Exo", sans-serif
+    font-weight: 300
+    margin-top: 2.5rem
+    margin-bottom: 4rem
+
+/* -------------- Colours */ 
+.bg-color-three-reasons
+    background-color: #fff
+
+.bg-color-personal-info
+    background-color: #f4f4f4
+
+.bg-color-work-history
+    background-color: #9b59b6
+
+.ui-menu-color-home
+    background-color: #e67e22
+
+.ui-menu-color-resume
+    background-color: #9b59b6
+
+.ui-menu-color-contact
+    background-color: #3498db
+
+.ui-menu-color-download
+    background-color: #525252   
+
+
+
 
 
 /* -------------- Header */    
@@ -85,20 +125,6 @@ header
 
 
 
-.ui-menu-color-home
-    background-color: #e67e22
-
-.ui-menu-color-resume
-    background-color: #9b59b6
-
-.ui-menu-color-contact
-    background-color: #3498db
-
-.ui-menu-color-download
-    background-color: #525252    
-
-
-
 .hvr-sweep-to-bottom:before
     background: rgba(0,0,0,0.2)
     height: 12rem
@@ -153,3 +179,102 @@ footer
             background: #e84610
 
 
+/* -------------- Three reasons */
+#three-reasons
+
+    .three-reasons-icon
+        font-size: 2.6rem
+        color: #e67e22
+
+    .three-reasons-heading
+        margin-bottom: 1.5rem
+        font-size: 2rem
+
+    p
+        font-size: 1.6rem
+
+
+/* -------------- Personal info */
+#personal-info
+    padding: 0 1.5rem
+
+    .personal-info-item
+        margin-bottom: 1.5rem
+        display: block
+        clear: both
+
+        .key, .value
+            font-size: 1.6rem
+            display: inline-block
+
+        .key
+            width: 25%
+            margin-right: 1rem
+            vertical-align: top
+            font-weight: 700
+
+        .value
+            position: relative
+            width: 70%
+            word-wrap: anywhere
+
+
+/* -------------- Skills */
+.progress-section
+    margin: 4rem 2rem
+.progress
+    position: relative
+    height: 2rem
+    margin-bottom: 0.5rem
+
+    .progress-type
+        position: absolute
+        left: 0
+        font-size: 1.2rem
+        font-weight: 400
+        padding: 0.3rem 3rem 0.3rem 1rem
+        color: #fafafa
+        background-color: rgba(25,25,25, 0.2)
+
+/* -------------- Work History */
+.history-heading
+    color: #fafafa
+    margin-bottom: 5rem
+
+.timeline-item
+    padding: 2.5rem 0 2rem 1.5rem
+    position: relative
+    color: #fafafa
+    border-left: 1px solid
+
+    h4
+        font-size: 2rem
+        margin: 0
+
+    p
+        font-size: 1.4rem
+        padding: 0
+        margin: 0
+
+    &:before
+        content: attr(data-dates)
+        position: absolute
+        left: 1.5rem
+        top: 0.6rem
+        display: block
+        font-family: "Exo", sans-serif
+        font-weight: 500
+        font-size: 1.2rem
+        padding: 0
+        margin: 0
+
+    &:after
+        width: 1.1rem
+        height: 1.1rem
+        display: block
+        top: 0.8rem
+        position: absolute
+        left: -0.6rem
+        border-radius: 1.2rem
+        content: ''
+        background: #fafafa
